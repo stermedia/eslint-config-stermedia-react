@@ -40,9 +40,18 @@ module.exports = {
     'react/sort-comp': 0,
     'react/require-default-props': 0,
     'react/prop-types': [
-      1,
+      'warn',
       {
-        'ignore': ['navigation', 'navigationHelper'],
+        'skipUndeclared': true,
+      },
+    ],
+    'react/jsx-tag-spacing': [
+      'warn',
+      {
+        'closingSlash': 'never',
+        'beforeSelfClosing': 'always',
+        'afterOpening': 'never',
+        'beforeClosing': 'allow'
       },
     ],
     'radix': 0,
@@ -65,7 +74,7 @@ module.exports = {
     'no-param-reassign': 0,
     'import/no-extraneous-dependencies': 0,
     'import/prefer-default-export': 0,
-    '@typescript-eslint/indent': ['warning', 2],
+    '@typescript-eslint/indent': ['warn', 2],
     '@typescript-eslint/explicit-member-accessibility': [
       'error',
       { 'accessibility': 'no-public' },
@@ -76,5 +85,14 @@ module.exports = {
         'newlines-between': 'always-and-inside-groups',
       },
     ],
-  },
-};
+    '@typescript-eslint/explicit-function-return-type': [
+      'warn',
+      {
+        'allowExpressions': true,
+        'allowTypedFunctionExpressions': true,
+        'allowHigherOrderFunctions': true,
+      },
+    ],
+    '@typescript-eslint/no-use-before-define': 'off',
+  }
+}
