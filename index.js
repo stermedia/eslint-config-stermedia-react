@@ -45,12 +45,6 @@ module.exports = {
         'ignore': ['navigation', 'navigationHelper'],
       },
     ],
-    'react/jsx-tag-spacing': {
-      'closingSlash': 'never',
-      'beforeSelfClosing': 'always',
-      'afterOpening': 'never',
-      'beforeClosing': 'allow',
-    },
     'radix': 0,
     'react/prefer-stateless-function': 0,
     'no-plusplus': 0,
